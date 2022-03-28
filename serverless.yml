@@ -1,0 +1,20 @@
+service: GlasnosticWebhookHandler
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  region: us-west-2
+  stage: production
+  runtime: nodejs14.x
+  memorySize: 256
+  architecture: arm64 #run as arm to minimize cost
+  environment:
+    WEBHOOK_CONFIG: ${file(env.yml):glasnostic-webhook-config}
+
+functions:
+  webhook:
+    handler: handler.webhook
+    events:
+      - httpApi:
+          path: /webhook
+          method: post
