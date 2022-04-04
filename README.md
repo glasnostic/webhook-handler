@@ -4,7 +4,7 @@ This sample code demonstrates how to integrate Glasnostic and PagerDuty. This co
 
 To run this sample, you will need to create a PagerDuty account and create a service. We assume that you already have access to a Glasnostic environment. If you'd like to get started with Glasnostic first please visit our [Quickstart](https://docs.glasnostic.com/quickstart/) to get started quickly.
 
-Visit our [homepage](https://www.glasnostic.com) for more information about Glasnostic and runtime control.
+Visit our [homepage](https://glasnostic.com) for more information about Glasnostic and runtime control.
 
 ## Deployment
 
